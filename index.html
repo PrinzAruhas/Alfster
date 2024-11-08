@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Game</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Game</h2>
+        <p>Experience the best adventure games on your device!</p>
+    </section>
+
+    <section id="games">
+        <h2>Games</h2>
+
+        <!-- Row 1 -->
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game1.jpg" alt="Game 1">
+            <h3>Wuthering Waves</h3>
+            <p class="description">Wuthering Waves is a story-rich open-world action RPG with a high degree of freedom</p>
+        </div>
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game2.jpeg" alt="Game 2">
+            <h3>Zenless Zone Zero</h3>
+            <p class="description">Zenless Zone Zero is a brand new action game. The story takes place in the near future, where a mysterious natural disaster known as the "Hollows".</p>
+        </div>
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game3.png" alt="Game 3">
+            <h3>Azur Lane</h3>
+            <p class="description">Conquer the ships, Conquer the sea! Naval shoot-em-up mobile game Azur Lane will take you to a brand new adventure.</p>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game4(2).jpeg" alt="Game 4">
+            <h3>Blue Archive</h3>
+            <p class="description">The city's academies are divided into their own districts and are considered mostly independent.</p>
+        </div>
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game5.jpg" alt="Game 5">
+            <h3>GODDESS OF VICTORY: NIKKE</h3>
+            <p class="description">GODDESS OF VICTORY: NIKKE is an immersive sci-fi RPG shooter game</p>
+        </div>
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game6.jpg" alt="Game 6">
+            <h3>Modern War Tank</h3>
+            <p class="description">Lead your tank company and prove your worth in fast-paced, high-stakes armored warfare. Master the battlefield and become a champion on the battlefield!.</p>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="game-item" onclick="toggleDescription(this)">
+            <img src="game7.jpg" alt="Game 7">
+            <h3>Modern War Ships</h3>
+            <p class="description">Take part in modern naval and air battles with combat vehicles that perform the way they would do in reality</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>My Game is a platform for all adventure game lovers to enjoy.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Game. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

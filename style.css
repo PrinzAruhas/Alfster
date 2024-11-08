@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #000000, #e00000);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffecb3;
+}
+
+#home {
+    background: linear-gradient(45deg, #000000, #ff0000);
+    color: #fff;
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+
+#games {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.game-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.game-item:hover img {
+    transform: scale(1.05);
+}
+
+.game-item h3 {
+    margin-top: 0.5rem;
+}
+
+.description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    transition: bottom 0.5s ease;
+    font-size: 0.9rem;
+}
+
+.game-item.active .description {
+    bottom: 0;
+}
+
+#about, #contact, footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    transition: bottom 0.5s ease;
+    font-size: 0.9rem;
+}
+
+.game-item.active .description {
+    bottom: 0;
+}
